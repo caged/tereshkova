@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0090BE21C34694B009ECBFE /* tereshkovaView.h in Headers */ = {isa = PBXBuildFile; fileRef = D0090BE11C34694B009ECBFE /* tereshkovaView.h */; };
+		D0090BE41C34694B009ECBFE /* tereshkovaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0090BE31C34694B009ECBFE /* tereshkovaView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0090BDE1C34694B009ECBFE /* tereshkova.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tereshkova.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0090BE11C34694B009ECBFE /* tereshkovaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tereshkovaView.h; sourceTree = "<group>"; };
+		D0090BE31C34694B009ECBFE /* tereshkovaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tereshkovaView.m; sourceTree = "<group>"; };
+		D0090BE51C34694B009ECBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0090BDA1C34694B009ECBFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0090BD41C34694B009ECBFE = {
+			isa = PBXGroup;
+			children = (
+				D0090BE01C34694B009ECBFE /* tereshkova */,
+				D0090BDF1C34694B009ECBFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0090BDF1C34694B009ECBFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0090BDE1C34694B009ECBFE /* tereshkova.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0090BE01C34694B009ECBFE /* tereshkova */ = {
+			isa = PBXGroup;
+			children = (
+				D0090BE11C34694B009ECBFE /* tereshkovaView.h */,
+				D0090BE31C34694B009ECBFE /* tereshkovaView.m */,
+				D0090BE51C34694B009ECBFE /* Info.plist */,
+			);
+			path = tereshkova;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D0090BDB1C34694B009ECBFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0090BE21C34694B009ECBFE /* tereshkovaView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D0090BDD1C34694B009ECBFE /* tereshkova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0090BE81C34694B009ECBFE /* Build configuration list for PBXNativeTarget "tereshkova" */;
+			buildPhases = (
+				D0090BD91C34694B009ECBFE /* Sources */,
+				D0090BDA1C34694B009ECBFE /* Frameworks */,
+				D0090BDB1C34694B009ECBFE /* Headers */,
+				D0090BDC1C34694B009ECBFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tereshkova;
+			productName = tereshkova;
+			productReference = D0090BDE1C34694B009ECBFE /* tereshkova.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0090BD51C34694B009ECBFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Justin Palmer";
+				TargetAttributes = {
+					D0090BDD1C34694B009ECBFE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = D0090BD81C34694B009ECBFE /* Build configuration list for PBXProject "tereshkova" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0090BD41C34694B009ECBFE;
+			productRefGroup = D0090BDF1C34694B009ECBFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0090BDD1C34694B009ECBFE /* tereshkova */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0090BDC1C34694B009ECBFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0090BD91C34694B009ECBFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0090BE41C34694B009ECBFE /* tereshkovaView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0090BE61C34694B009ECBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D0090BE71C34694B009ECBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0090BE91C34694B009ECBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = tereshkova/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latbratrevenge.tereshkova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		D0090BEA1C34694B009ECBFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = tereshkova/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latbratrevenge.tereshkova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0090BD81C34694B009ECBFE /* Build configuration list for PBXProject "tereshkova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0090BE61C34694B009ECBFE /* Debug */,
+				D0090BE71C34694B009ECBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0090BE81C34694B009ECBFE /* Build configuration list for PBXNativeTarget "tereshkova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0090BE91C34694B009ECBFE /* Debug */,
+				D0090BEA1C34694B009ECBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0090BD51C34694B009ECBFE /* Project object */;
+}
