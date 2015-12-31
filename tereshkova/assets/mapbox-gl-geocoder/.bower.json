@@ -1,0 +1,14 @@
+{
+  "name": "mapbox-gl-geocoder",
+  "_cacheHeaders": {
+    "ETag": "\"f8b7f73f96664ee67f9b81a117e4cd6bb1529a30\"",
+    "Content-Length": "71992",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "_release": "e-tag:f8b7f73f9",
+  "main": "index.js",
+  "_source": "https://raw.githubusercontent.com/mapbox/mapbox-gl-geocoder/bb0c92480ca915a259ac82721453110b90c2b355/dist/mapbox-gl-geocoder.js",
+  "_target": "*",
+  "_originalSource": "https://raw.githubusercontent.com/mapbox/mapbox-gl-geocoder/bb0c92480ca915a259ac82721453110b90c2b355/dist/mapbox-gl-geocoder.js",
+  "_direct": true
+}

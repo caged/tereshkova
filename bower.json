@@ -17,6 +17,9 @@
     "tests"
   ],
   "dependencies": {
-    "mapbox-gl-js": "~0.11.0"
+    "mapbox-gl-js": "~0.11.0",
+    "turf": "~2.0.2",
+    "geocoder": "https://raw.githubusercontent.com/mapbox/mapbox-gl-geocoder/bb0c92480ca915a259ac82721453110b90c2b355/src/geocoder.js",
+    "mapbox-gl-geocoder": "https://raw.githubusercontent.com/mapbox/mapbox-gl-geocoder/bb0c92480ca915a259ac82721453110b90c2b355/dist/mapbox-gl-geocoder.js"
   }
 }
