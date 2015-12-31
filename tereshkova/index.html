@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .mapbox-directions-instructions,
+    .directions-control.directions-control-inputs,
+    .directions-control.directions-control-directions {
+      display: none;
+    }
+
+    .destination {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 25vw;
+      padding: 10px;
+      line-height: 1.5em;
+      font-family: 'San Francisco', 'Helvetica Neue', sans-serif;
+      font-size: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #aaa;
+      border-radius: 3px;
+    }
+
+    .duration,
+    .distance,
+    .name {
+      display: inline;
+    }
+
+    .duration {
+      color: #7fce4e;
+      font-weight: bold;
+    }
+
+    .distance {
+      color: #25a8db;
+    }
+
+    .name {
+      color: #fff;
+    }
+  </style>
+  <script>
+  </script>
+</head>
+<body>
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v1.0.0/mapbox-gl-directions.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v1.0.0/mapbox-gl-directions.css' type='text/css' />
+  <div id='map'></div>
+  <div class="js-dest-info destination">
+    <div class="js-destination-duration duration"></div> to drive
+    <div class="js-destination-distance distance"></div> to
+    <div class="js-destination-name name"></div>
+  </div>
+  <script>
+  (function() {
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2FnZWQiLCJhIjoiQjd2aXNGYyJ9.gr1QeGYwG1QYUW47I-DqaQ';
+
+    const format = {
+      duration(s) {
+        var m = Math.floor(s / 60),
+          h = Math.floor(m / 60);
+        s %= 60;
+        m %= 60;
+        if (h === 0 && m === 0) return s + ' s';
+        if (h === 0) return m + ' min';
+        return h + ' h ' + m + ' min';
+      },
+
+      imperial(m) {
+        var mi = m / 1609.344;
+        if (mi >= 100) return mi.toFixed(0) + ' mi';
+        if (mi >= 10) return mi.toFixed(1) + ' mi';
+        if (mi >= 0.1) return mi.toFixed(2) + ' mi';
+        return (mi * 5280).toFixed(0) + ' ft';
+      }
+    }
+
+    var olat = 45.5234514990001,
+        olon = -122.6762071,
+        dlat, dlon
+
+    var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/satellite-v8',
+          center: [olon, olat],
+          zoom: 13
+        })
+
+    var directions = mapboxgl.Directions({
+      proximity: [olon, olat] // Give search results closer to these coordinates higher priority.
+    })
+
+    map.addControl(directions)
+
+    directions.on('directions.error', function(e) {
+      console.log("ERROR:", e)
+    })
+
+    map.on('load', function() {
+      directions.setOrigin('Portland, OR')
+      transitionToRandomDestination()
+    })
+
+    function transitionToRandomDestination() {
+      dlon = olon + (Math.random() - 0.1)
+      dlat = olat + (Math.random() - 0.1)
+
+      directions.setDestination([dlon, dlat])
+      map.flyTo({ center: [dlon, dlat] })
+
+      directions.on('directions.route', function(obj) {
+        var dest = document.querySelector('.js-destination').value,
+            dur  = format.duration(obj.route[0].duration),
+            dis  = format.imperial(obj.route[0].distance)
+
+        document.querySelector('.js-dest-info').style.display = 'block'
+        document.querySelector('.js-destination-name').innerHTML = dest
+        document.querySelector('.js-destination-distance').innerHTML = dis.replace(/mi$/, 'miles')
+        document.querySelector('.js-destination-duration').innerHTML = dur
+      })
+    }
+
+    setInterval(transitionToRandomDestination, 10000)
+  })()
+  </script>
+</body>
+</html>

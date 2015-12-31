@@ -1,5 +1,5 @@
 //
-//  tereshkovaView.h
+//  TereshkovaView.h
 //  tereshkova
 //
 //  Created by Justin Palmer on 12/30/15.
@@ -7,7 +7,9 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
+#import <WebKit/WebKit.h>
 
-@interface tereshkovaView : ScreenSaverView
-
+@interface TereshkovaView : ScreenSaverView {
+    WebView *webView;
+}
 @end

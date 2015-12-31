@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0090BE21C34694B009ECBFE /* tereshkovaView.h in Headers */ = {isa = PBXBuildFile; fileRef = D0090BE11C34694B009ECBFE /* tereshkovaView.h */; };
-		D0090BE41C34694B009ECBFE /* tereshkovaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0090BE31C34694B009ECBFE /* tereshkovaView.m */; };
+		D0090BE21C34694B009ECBFE /* TereshkovaView.h in Headers */ = {isa = PBXBuildFile; fileRef = D0090BE11C34694B009ECBFE /* TereshkovaView.h */; };
+		D0090BE41C34694B009ECBFE /* TereshkovaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0090BE31C34694B009ECBFE /* TereshkovaView.m */; };
+		D0090BEC1C346EF2009ECBFE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D0090BEB1C346EF2009ECBFE /* index.html */; };
+		D0090BEF1C34706C009ECBFE /* assets in Resources */ = {isa = PBXBuildFile; fileRef = D0090BEE1C34706C009ECBFE /* assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0090BDE1C34694B009ECBFE /* tereshkova.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tereshkova.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0090BE11C34694B009ECBFE /* tereshkovaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tereshkovaView.h; sourceTree = "<group>"; };
-		D0090BE31C34694B009ECBFE /* tereshkovaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tereshkovaView.m; sourceTree = "<group>"; };
+		D0090BE11C34694B009ECBFE /* TereshkovaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TereshkovaView.h; sourceTree = "<group>"; };
+		D0090BE31C34694B009ECBFE /* TereshkovaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TereshkovaView.m; sourceTree = "<group>"; };
 		D0090BE51C34694B009ECBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0090BEB1C346EF2009ECBFE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		D0090BEE1C34706C009ECBFE /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +52,11 @@
 		D0090BE01C34694B009ECBFE /* tereshkova */ = {
 			isa = PBXGroup;
 			children = (
-				D0090BE11C34694B009ECBFE /* tereshkovaView.h */,
-				D0090BE31C34694B009ECBFE /* tereshkovaView.m */,
+				D0090BEE1C34706C009ECBFE /* assets */,
+				D0090BE11C34694B009ECBFE /* TereshkovaView.h */,
+				D0090BE31C34694B009ECBFE /* TereshkovaView.m */,
 				D0090BE51C34694B009ECBFE /* Info.plist */,
+				D0090BEB1C346EF2009ECBFE /* index.html */,
 			);
 			path = tereshkova;
 			sourceTree = "<group>";
@@ -62,7 +68,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0090BE21C34694B009ECBFE /* tereshkovaView.h in Headers */,
+				D0090BE21C34694B009ECBFE /* TereshkovaView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0090BEC1C346EF2009ECBFE /* index.html in Resources */,
+				D0090BEF1C34706C009ECBFE /* assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0090BE41C34694B009ECBFE /* tereshkovaView.m in Sources */,
+				D0090BE41C34694B009ECBFE /* TereshkovaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
