@@ -1,0 +1,22 @@
+{
+  "name": "tereshkova",
+  "homepage": "https://github.com/Caged/tereshkova",
+  "authors": [
+    "Justin Palmer <justin@labratrevenge.com>"
+  ],
+  "description": "Nearby sattelite photos",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mapbox-gl-js": "~0.11.0"
+  }
+}
