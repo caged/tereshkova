@@ -1,0 +1,13 @@
+{
+  "name": "mapbox",
+  "_cacheHeaders": {
+    "ETag": "\"ef70c378b73bc9d407ceefc556099a193d3ef329\"",
+    "Content-Length": "235056",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "_release": "e-tag:ef70c378b",
+  "main": "index.js",
+  "_source": "https://gist.githubusercontent.com/Caged/4157688f536af99e46c9/raw/f0ea825118ffada9e084946c8d4a7cc28eae959f/mapbox-sdk-latest.js",
+  "_target": "*",
+  "_originalSource": "https://gist.githubusercontent.com/Caged/4157688f536af99e46c9/raw/f0ea825118ffada9e084946c8d4a7cc28eae959f/mapbox-sdk-latest.js"
+}
