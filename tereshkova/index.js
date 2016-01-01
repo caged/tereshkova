@@ -33,6 +33,8 @@
     transitionToRandomDestination()
   })
 
+  var source = new mapboxgl.GeoJSONSource()
+
   function randomBetween(f, t) {
     return (Math.random() * (f - t) + t)
   }
@@ -54,13 +56,15 @@
     }
 
     client.geocodeForward(q, options, function(err, res) {
-      var dest = res.features[0].place_name,
-          dist = turf.distance(turf.point([olon, olat]), turf.point([dlon, dlat]), 'miles')
-      console.log(dist);
-      document.querySelector('.js-dest-info').style.display = 'block'
+      var originPoint = turf.point([olon, olat]),
+          destPoint   = turf.point([dlon, dlat]),
+          dest = res.features[0].place_name,
+          dist = turf.distance(originPoint, destPoint, 'miles')
 
+      document.querySelector('.js-dest-info').style.display = 'block'
       document.querySelector('.js-destination-distance').innerHTML = Math.floor(dist) + " miles away. "
       document.querySelector('.js-destination-name').innerHTML = dest
+
 
       map.once('moveend', function() {
         setTimeout(function() {
