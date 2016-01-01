@@ -19,7 +19,6 @@
   "dependencies": {
     "mapbox-gl-js": "~0.11.0",
     "turf": "~2.0.2",
-    "geocoder": "https://raw.githubusercontent.com/mapbox/mapbox-gl-geocoder/bb0c92480ca915a259ac82721453110b90c2b355/src/geocoder.js",
-    "mapbox-gl-geocoder": "https://raw.githubusercontent.com/mapbox/mapbox-gl-geocoder/bb0c92480ca915a259ac82721453110b90c2b355/dist/mapbox-gl-geocoder.js"
+    "mapbox": "https://gist.githubusercontent.com/Caged/4157688f536af99e46c9/raw/f0ea825118ffada9e084946c8d4a7cc28eae959f/mapbox-sdk-latest.js"
   }
 }
