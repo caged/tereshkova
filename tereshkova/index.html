@@ -3,6 +3,8 @@
 <head>
   <meta charset='utf-8' />
   <script src='assets/mapbox-gl-js/mapbox-gl.js'></script>
+  <script src='assets/mapbox/index.js'></script>
+  <script src='assets/turf/turf.js'></script>
   <link href='assets/mapbox-gl-js/mapbox-gl.css' rel='stylesheet' />
   <style>
     body {
@@ -63,37 +65,10 @@
 <body>
   <div id='map'></div>
   <div class="js-dest-info destination">
-    <div class="js-destination-duration duration"></div> to drive
-    <div class="js-destination-distance distance"></div> to
+    <div class="js-destination-duration duration"></div>
+    <div class="js-destination-distance distance"></div>
     <div class="js-destination-name name"></div>
   </div>
-  <script>
-  (function() {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiY2FnZWQiLCJhIjoiQjd2aXNGYyJ9.gr1QeGYwG1QYUW47I-DqaQ';
-
-    var olat = 45.5234514990001,
-        olon = -122.6762071,
-        dlat, dlon
-
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/satellite-v8',
-      center: [olon, olat],
-      zoom: 13
-    })
-
-    map.on('load', function() {
-      transitionToRandomDestination()
-    })
-
-    function transitionToRandomDestination() {
-      dlon = olon + (Math.random() - 0.1)
-      dlat = olat + (Math.random() - 0.1)
-      map.flyTo({ center: [dlon, dlat] })
-    }
-
-    setInterval(transitionToRandomDestination, 10000)
-  })()
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>
