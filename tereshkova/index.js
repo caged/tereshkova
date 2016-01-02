@@ -1,8 +1,15 @@
 (function() {
   mapboxgl.accessToken = 'pk.eyJ1IjoiY2FnZWQiLCJhIjoiQjd2aXNGYyJ9.gr1QeGYwG1QYUW47I-DqaQ';
 
-  var olat = 45.5234514990001,
-      olon = -122.6762071
+  var cities = {
+    memphis: [-90.0489800999999, 35.149534299],
+    portland: [-122.6762071, 45.5234514990001]
+  }
+
+  var origin = cities.memphis
+
+  var olat = origin[1],
+      olon = origin[0]
 
   var easeInProperties = {
     zoom: 17,
@@ -23,7 +30,7 @@
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/satellite-v8',
-    center: [olon, olat],
+    center: origin,
     zoom: 13
   })
 
@@ -47,16 +54,8 @@
         dlat = (olat + distanceLat)
         q = dlon + "," + dlat
 
-    console.log('TRANSITIONING', dlon, dlat);
-    var options = {
-      proximity: {
-        latitude: olat,
-        longitude: olon
-      }
-    }
-
-    client.geocodeForward(q, options, function(err, res) {
-      var originPoint = turf.point([olon, olat]),
+    client.geocodeForward(q, {}, function(err, res) {
+      var originPoint = turf.point(origin),
           destPoint   = turf.point([dlon, dlat]),
           dest = res.features[0].place_name,
           dist = turf.distance(originPoint, destPoint, 'miles')
