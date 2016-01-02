@@ -101,7 +101,7 @@
 
   // Properties used when animating back from a location
   easeBackProperties = {
-    zoom: 13,
+    zoom: 14,
     duration: 5000,
     pitch: 0,
     bearing: 0
