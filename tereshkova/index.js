@@ -30,7 +30,7 @@
 
   var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/satellite-v8',
+    style: 'mapbox://styles/mapbox/satellite-hybrid-v8',
     center: origin,
     zoom: 13
   })
