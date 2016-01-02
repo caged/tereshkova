@@ -6,7 +6,7 @@
     portland: [-122.6762071, 45.5234514990001]
   }
 
-  var origin = cities.memphis
+  var origin = cities.portland
 
   var olat = origin[1],
       olon = origin[0]
@@ -42,11 +42,9 @@
         "type": "circle",
         "source": "destinations"
     })
-  })
-
-  map.on('load', function() {
     transitionToRandomDestination()
   })
+
 
   function randomBetween(f, t) {
     return (Math.random() * (f - t) + t)
@@ -87,7 +85,11 @@
       source.setData({ type: 'FeatureCollection',
         features: [destPoint]
       })
-      map.jumpTo({ center: [dlon, dlat] })
+
+      map.flyTo({
+        center: [dlon, dlat],
+        speed: 0.3
+      })
     })
   }
 })()
