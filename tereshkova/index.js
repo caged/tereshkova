@@ -48,7 +48,11 @@
     map.addLayer({
         id: 'destinations',
         type: 'circle',
-        source: 'destinations'
+        source: 'destinations',
+        paint: {
+          'circle-radius': 6,
+          'circle-color': '#fdb109'
+        }
     })
 
 
