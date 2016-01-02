@@ -12,6 +12,8 @@
 		D0090BEC1C346EF2009ECBFE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D0090BEB1C346EF2009ECBFE /* index.html */; };
 		D0090BEF1C34706C009ECBFE /* assets in Resources */ = {isa = PBXBuildFile; fileRef = D0090BEE1C34706C009ECBFE /* assets */; };
 		D0C260131C3834EF0052CAE1 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = D0C260121C3834EF0052CAE1 /* index.js */; };
+		D0C2601D1C38805B0052CAE1 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C2601B1C38805B0052CAE1 /* thumbnail.png */; };
+		D0C2601E1C38805B0052CAE1 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C2601C1C38805B0052CAE1 /* thumbnail@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D0090BEB1C346EF2009ECBFE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		D0090BEE1C34706C009ECBFE /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		D0C260121C3834EF0052CAE1 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		D0C2601B1C38805B0052CAE1 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbnail.png; path = tereshkova/thumbnail.png; sourceTree = SOURCE_ROOT; };
+		D0C2601C1C38805B0052CAE1 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@2x.png"; path = "tereshkova/thumbnail@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		D0090BE01C34694B009ECBFE /* tereshkova */ = {
 			isa = PBXGroup;
 			children = (
+				D0C2601B1C38805B0052CAE1 /* thumbnail.png */,
+				D0C2601C1C38805B0052CAE1 /* thumbnail@2x.png */,
 				D0C260121C3834EF0052CAE1 /* index.js */,
 				D0090BEE1C34706C009ECBFE /* assets */,
 				D0090BE11C34694B009ECBFE /* TereshkovaView.h */,
@@ -132,8 +138,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C2601D1C38805B0052CAE1 /* thumbnail.png in Resources */,
 				D0C260131C3834EF0052CAE1 /* index.js in Resources */,
 				D0090BEC1C346EF2009ECBFE /* index.html in Resources */,
+				D0C2601E1C38805B0052CAE1 /* thumbnail@2x.png in Resources */,
 				D0090BEF1C34706C009ECBFE /* assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
