@@ -12,6 +12,9 @@
 		D0090BEC1C346EF2009ECBFE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D0090BEB1C346EF2009ECBFE /* index.html */; };
 		D0090BEF1C34706C009ECBFE /* assets in Resources */ = {isa = PBXBuildFile; fileRef = D0090BEE1C34706C009ECBFE /* assets */; };
 		D0C260131C3834EF0052CAE1 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = D0C260121C3834EF0052CAE1 /* index.js */; };
+		D0C260161C3856320052CAE1 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0C260151C3856320052CAE1 /* ConfigureSheet.xib */; };
+		D0C260191C3856D00052CAE1 /* LRRConfigController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C260171C3856D00052CAE1 /* LRRConfigController.h */; };
+		D0C2601A1C3856D00052CAE1 /* LRRConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C260181C3856D00052CAE1 /* LRRConfigController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		D0090BEB1C346EF2009ECBFE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		D0090BEE1C34706C009ECBFE /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		D0C260121C3834EF0052CAE1 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		D0C260151C3856320052CAE1 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		D0C260171C3856D00052CAE1 /* LRRConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRRConfigController.h; sourceTree = "<group>"; };
+		D0C260181C3856D00052CAE1 /* LRRConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRRConfigController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		D0090BD41C34694B009ECBFE = {
 			isa = PBXGroup;
 			children = (
+				D0C260141C3855C60052CAE1 /* Resources */,
 				D0090BE01C34694B009ECBFE /* tereshkova */,
 				D0090BDF1C34694B009ECBFE /* Products */,
 			);
@@ -60,8 +67,18 @@
 				D0090BE31C34694B009ECBFE /* TereshkovaView.m */,
 				D0090BE51C34694B009ECBFE /* Info.plist */,
 				D0090BEB1C346EF2009ECBFE /* index.html */,
+				D0C260171C3856D00052CAE1 /* LRRConfigController.h */,
+				D0C260181C3856D00052CAE1 /* LRRConfigController.m */,
 			);
 			path = tereshkova;
+			sourceTree = "<group>";
+		};
+		D0C260141C3855C60052CAE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0C260151C3856320052CAE1 /* ConfigureSheet.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0090BE21C34694B009ECBFE /* TereshkovaView.h in Headers */,
+				D0C260191C3856D00052CAE1 /* LRRConfigController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +152,7 @@
 			files = (
 				D0C260131C3834EF0052CAE1 /* index.js in Resources */,
 				D0090BEC1C346EF2009ECBFE /* index.html in Resources */,
+				D0C260161C3856320052CAE1 /* ConfigureSheet.xib in Resources */,
 				D0090BEF1C34706C009ECBFE /* assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C2601A1C3856D00052CAE1 /* LRRConfigController.m in Sources */,
 				D0090BE41C34694B009ECBFE /* TereshkovaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
