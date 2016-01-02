@@ -15,7 +15,7 @@
     zoom: 17,
     duration: 10000,
     pitch: 25,
-    bearing: 90
+    bearing: 45
   }
 
   var easeBackProperties = {
@@ -26,6 +26,7 @@
   }
 
   var client = new MapboxClient(mapboxgl.accessToken)
+  var source = new mapboxgl.GeoJSONSource({ data: { type: 'FeatureCollection', features: [] } })
 
   var map = new mapboxgl.Map({
     container: 'map',
@@ -34,21 +35,26 @@
     zoom: 13
   })
 
-  map.off('moveend')
+  map.on('style.load', function () {
+    map.addSource('destinations', source)
+    map.addLayer({
+        "id": "destinations",
+        "type": "circle",
+        "source": "destinations"
+    })
+  })
 
   map.on('load', function() {
     transitionToRandomDestination()
   })
-
-  var source = new mapboxgl.GeoJSONSource()
 
   function randomBetween(f, t) {
     return (Math.random() * (f - t) + t)
   }
 
   function transitionToRandomDestination() {
-    var distanceLat = randomBetween(-0.1, 0.1),
-        distanceLon = randomBetween(-0.1, 0.1)
+    var distanceLat = randomBetween(-0.2, 0.2),
+        distanceLon = randomBetween(-0.2, 0.2)
 
     var dlon = (olon + distanceLon),
         dlat = (olat + distanceLat)
@@ -61,23 +67,26 @@
           dist = turf.distance(originPoint, destPoint, 'miles')
 
       document.querySelector('.js-dest-info').style.display = 'block'
-      document.querySelector('.js-destination-distance').innerHTML = Math.floor(dist) + " miles away. "
-      document.querySelector('.js-destination-name').innerHTML = dest
-
+      document.querySelector('.js-destination-distance').innerHTML = Math.floor(dist) + " miles away."
+      document.querySelector('.js-destination-name').innerHTML = dest + " "
 
       map.once('moveend', function() {
         setTimeout(function() {
           map.easeTo(easeInProperties)
           map.once('moveend', function() {
-            map.easeTo(easeBackProperties)
-            map.once('moveend', function() {
-              console.log('FINAL MOVE END');
-              transitionToRandomDestination()
-            })
+            setTimeout(function() {
+              map.easeTo(easeBackProperties)
+              map.once('moveend', function() {
+                transitionToRandomDestination()
+              })
+            }, 5000)
           })
         }, 5000)
       })
 
+      source.setData({ type: 'FeatureCollection',
+        features: [destPoint]
+      })
       map.jumpTo({ center: [dlon, dlat] })
     })
   }
