@@ -12,7 +12,7 @@ This uses my public Mapbox token by default which could go away at any time.  I 
 
 **REQUIRED**
 
-* [Download the latest version](https://github.com/Caged/tereshkova/releases)
+* [Download the latest version](https://github.com/Caged/tereshkova/releases) of the [zip file](https://github.com/Caged/tereshkova/releases/download/v1.0/tereshkova.zip)
 * Double click the `tereshkova.saver` file
 
 ### Change the list of cities
