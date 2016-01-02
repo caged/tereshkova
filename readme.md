@@ -1,6 +1,6 @@
 A screensaver that selects a random city and zooms in on various locations around that city.
 
-![](tereshkova/preview.jpg)
+[![](tereshkova/preview.jpg)](http://i.imgur.com/D0B6leW.gifv)
 
 ### Install
 
