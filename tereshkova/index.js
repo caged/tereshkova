@@ -84,7 +84,7 @@
           dist = turf.distance(originPoint, destPoint, 'miles')
 
       document.querySelector('.js-dest-info').style.display = 'block'
-      document.querySelector('.js-destination-distance').innerHTML = Math.floor(dist) + " miles away."
+      document.querySelector('.js-destination-distance').innerHTML = "Roughly " + Math.floor(dist) + " miles from the center of " + locationName
       document.querySelector('.js-destination-name').innerHTML = dest + " "
 
       map.once('moveend', function() {
