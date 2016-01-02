@@ -11,6 +11,7 @@
 		D0090BE41C34694B009ECBFE /* TereshkovaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0090BE31C34694B009ECBFE /* TereshkovaView.m */; };
 		D0090BEC1C346EF2009ECBFE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D0090BEB1C346EF2009ECBFE /* index.html */; };
 		D0090BEF1C34706C009ECBFE /* assets in Resources */ = {isa = PBXBuildFile; fileRef = D0090BEE1C34706C009ECBFE /* assets */; };
+		D0C260131C3834EF0052CAE1 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = D0C260121C3834EF0052CAE1 /* index.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D0090BE51C34694B009ECBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0090BEB1C346EF2009ECBFE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		D0090BEE1C34706C009ECBFE /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		D0C260121C3834EF0052CAE1 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		D0090BE01C34694B009ECBFE /* tereshkova */ = {
 			isa = PBXGroup;
 			children = (
+				D0C260121C3834EF0052CAE1 /* index.js */,
 				D0090BEE1C34706C009ECBFE /* assets */,
 				D0090BE11C34694B009ECBFE /* TereshkovaView.h */,
 				D0090BE31C34694B009ECBFE /* TereshkovaView.m */,
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C260131C3834EF0052CAE1 /* index.js in Resources */,
 				D0090BEC1C346EF2009ECBFE /* index.html in Resources */,
 				D0090BEF1C34706C009ECBFE /* assets in Resources */,
 			);
@@ -270,6 +274,7 @@
 				D0090BEA1C34694B009ECBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,12 +13,14 @@
 - (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 {
     self = [super initWithFrame:frame isPreview:isPreview];
+    
     if (self) {
         webView = [[WebView alloc] initWithFrame:[self bounds] frameName:nil groupName:nil];
         [webView setDrawsBackground:NO];
         [webView setMainFrameURL:[NSString stringWithFormat:@"file://%@/index.html", [[NSBundle bundleForClass:[self class]] resourcePath]]];
         [self addSubview:webView];
     }
+    
     return self;
 }
 
