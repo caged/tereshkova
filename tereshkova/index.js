@@ -1,8 +1,7 @@
 (function() {
 
-  // YOU SHOULD PROVIDE YOUR OWN TOKEN AS THIS PUBLIC ONE WILL LIKELY GO AWAWY
-  // Provide your own access token.  This is a default, public access token.
-  mapboxgl.accessToken = 'pk.eyJ1IjoiY2FnZWQiLCJhIjoiY2lpeGw0cmR0MDAyM3RvbHp5czNoa2ozNCJ9.ndGrZjq3n16egIziiEIxvw';
+  // YOU SHOULD PROVIDE YOUR OWN TOKEN
+  mapboxgl.accessToken = '!!!YOUR TOKEN HERE!!!';
 
   // EDIT THIS TO ADD OR REMOVE LOCATIONS
   var locations = [
